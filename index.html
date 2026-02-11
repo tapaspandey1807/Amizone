@@ -95,30 +95,7 @@
                             id="Challenge" name="Challenge" type="hidden"
                             value="706b3f17c489ea5cc65283bd2542fbabf3d64d9d920256600872b1a279237917" />
 
-                        let userActive = false;
 
-                        // Track user activity (to prevent bot automation)
-                        function setUserActive() {
-                        userActive = true;
-                        }
-
-                        document.addEventListener('mousemove', setUserActive);
-                        document.addEventListener('touchstart', setUserActive);
-                        document.addEventListener('touchmove', setUserActive);
-
-                        // Ensure user has verified CAPTCHA before login
-                        function validateToken(event) {
-                        event.preventDefault(); // Prevent form submission
-
-                        if (!userActive) {
-                        alert("Please interact with the page before submitting the form.");
-                        return false;
-                        }
-
-                        // If everything is valid, submit the form
-                        document.getElementById("loginForm").submit();
-                        }
-                        </script>
                         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
                         <div class="wrap-input100 validate-input" data-validate="User Name is required">
                             <input autocomplete="off" class=" input100" data-val="true"
