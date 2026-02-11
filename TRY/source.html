@@ -1,6 +1,3 @@
-
-
-
 <!doctype html>
 <html>
 
@@ -17,9 +14,6 @@
     <link href="/Content/owl.carousel.css" rel="stylesheet" />
 
     <style>
-
-      
-
         @media(min-width:769px) {
             .login100-form {
                 left: 330px;
@@ -56,10 +50,10 @@
 </head>
 
 <body>
-  
-    
+
+
     <div class="limiter">
-        <div class="container-login100" >
+        <div class="container-login100">
             <div class="wrap-login100">
 
                 <div class="logo-section">
@@ -68,7 +62,7 @@
                 </div>
                 <div class="widget-box login-box visible login100-form" style="width:375px;" id="login-box">
                     <span class="login100-form-title">
-                        LOGIN  <small> Student | Parent </small>
+                        LOGIN <small> Student | Parent </small>
                         <div>
                             <p style="font-size:14px; line-height:10pt; margin:5px 0px 0px 0px;">
                                 <a href="https://amizone.net/adminamizone/index.aspx">
@@ -78,67 +72,32 @@
                                 </a>
                             </p>
 
-                            
+
                             <p style="font-size:14px; line-height:14pt; margin:5px 0px 0px 0px;">
-                                Exam :  <a href="https://oe.amizone.net">
+                                Exam : <a href="https://oe.amizone.net">
                                     <b style="color:blue;">
                                         https://oe.amizone.net
                                     </b>
                                 </a>
                             </p>
                         </div>
-                        
-
                     </span>
 
-<form action="/" class=" validate-form" id="loginform" method="post" name="loginform" onsubmit="return validateToken();"><input name="__RequestVerificationToken" type="hidden" value="2Vlczo8RTzy8nnInMjMnoVairwl3ovz8YwPsFlEHhDXeYyj3cNj5GaMi8sbl_fl4MEzU0hUyaO52SX7WiKi3ks_Rlc6wPYlg6XTq7erlO4A1" /><input id="Salt" name="Salt" type="hidden" value="eHV44IZIAEXeVAJt" /><input id="SecretNumber" name="SecretNumber" type="hidden" value="65693" /><input id="Signature" name="Signature" type="hidden" value="68f59308a02e29cc5e994e1345394f6521fc032991b7de5f27b0905efb28cb2c" /><input id="Challenge" name="Challenge" type="hidden" value="706b3f17c489ea5cc65283bd2542fbabf3d64d9d920256600872b1a279237917" />                        <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onloadTurnstileCallback" defer></script>
-                        <script>
-                            window.onloadTurnstileCallback = function () {
-                                turnstile.render("#Capthcadiv", {
-                                    sitekey: "0x4AAAAAAAwm6_gqjJdfOuzq",
-                                    callback: function (token) {
-                                        document.getElementById('RecaptchaToken').value = token;
-                                        document.getElementById('_QString').value = "test";
-                                    },
-                                });
-                            };
+                    <form action="/" class=" validate-form" id="loginform" method="post" name="loginform">
+                        <input name="__RequestVerificationToken" type="hidden"
+                            value="2Vlczo8RTzy8nnInMjMnoVairwl3ovz8YwPsFlEHhDXeYyj3cNj5GaMi8sbl_fl4MEzU0hUyaO52SX7WiKi3ks_Rlc6wPYlg6XTq7erlO4A1" />
+                        <input id="Salt" name="Salt" type="hidden" value="eHV44IZIAEXeVAJt" />
+                        <input id="SecretNumber" name="SecretNumber" type="hidden" value="65693" />
+                        <input id="Signature" name="Signature" type="hidden"
+                            value="68f59308a02e29cc5e994e1345394f6521fc032991b7de5f27b0905efb28cb2c" />
+                        <input id="Challenge" name="Challenge" type="hidden"
+                            value="706b3f17c489ea5cc65283bd2542fbabf3d64d9d920256600872b1a279237917" />
 
-                            let userActive = false;
-
-                            // Track user activity (to prevent bot automation)
-                            function setUserActive() {
-                                userActive = true;
-                            }
-
-                            document.addEventListener('mousemove', setUserActive);
-                            document.addEventListener('touchstart', setUserActive);
-                            document.addEventListener('touchmove', setUserActive);
-
-                            // Ensure user has verified CAPTCHA before login
-                            function validateToken(event) {
-                                event.preventDefault(); // Prevent form submission
-
-                                var token = document.getElementById('RecaptchaToken').value;
-                                var captchaResponse = document.querySelector('input[name="cf-turnstile-response"]')?.value;
-
-                                if (!userActive) {
-                                    alert("Please interact with the page before submitting the form.");
-                                    return false;
-                                }
-
-                                if (!token || !captchaResponse) {
-                                    alert("Please complete the CAPTCHA before logging in.");
-                                    return false;
-                                }
-
-                                // If everything is valid, submit the form
-                                document.getElementById("loginForm").submit();
-                            }
-                        </script>
                         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
                         <div class="wrap-input100 validate-input" data-validate="User Name is required">
-                            <input autocomplete="off" class=" input100" data-val="true" data-val-required="User Name is required !!" name="_UserName" placeholder="User Name" type="text" value="" />
-
+                            <input autocomplete="off" class=" input100" data-val="true"
+                                data-val-required="User Name is required !!" name="_UserName" placeholder="User Name"
+                                type="text" value="" />
                             <input name="_QString" type="hidden" value="" />
                             <span class="focus-input100"></span>
                             <span class="symbol-input100">
@@ -146,7 +105,10 @@
                             </span>
                         </div>
                         <div class="wrap-input100 validate-input" data-validate="Password is required">
-                            <input autocomplete="off" class=" input100" data-val="true" data-val-length="Must be between 5 and 20 characters" data-val-length-max="20" data-val-length-min="5" data-val-required="Password is required !!" name="_Password" placeholder="Password" type="password" />
+                            <input autocomplete="off" class=" input100" data-val="true"
+                                data-val-length="Must be between 5 and 20 characters" data-val-length-max="20"
+                                data-val-length-min="5" data-val-required="Password is required !!" name="_Password"
+                                placeholder="Password" type="password" />
                             <span class="focus-input100"></span>
                             <span class="symbol-input100">
                                 <i class="fa fa-lock" aria-hidden="true"></i>
@@ -154,7 +116,7 @@
                         </div>
                         <div id="Capthcadiv" style="text-align: center;"></div>
                         <input type="hidden" id="RecaptchaToken" name="RecaptchaToken" />
-<input id="honeypot" name="honeypot" type="hidden" value="" />                        <!--<div class="wrap-input100">
+                        <input id="honeypot" name="honeypot" type="hidden" value="" /> <!--<div class="wrap-input100">
         <button class="g-recaptcha"
                 data-sitekey="6LfTtiwqAAAAAOx5LKqrCx5nbXSk1JbnITKRAe5C"
                 data-callback='onSubmit'
@@ -195,13 +157,19 @@
                                 return true;
                             }
                         </script>
-</form>                </div>
+                    </form>
+                </div>
                 <div class="widget-box forgot-box login100-form" id="forgot-box">
                     <span class="login100-form-title">
                         Password Recovery
                     </span>
-<form action="/Login/ForgotPassword" class="validate-form" id="ForgetForm" method="post" name="ForgetForm"><input name="__RequestVerificationToken" type="hidden" value="RtrEOStsx8Cc8DIwZBjrk1FizK6AF9SnT3cQY899zphFoVuczbJNERz6gUkVMovJ0ZHMtt0c4orW53VfgGb-VYXdZecgfTukopC2FD4uYaQ1" />                        <div class="wrap-input100 validate-input" data-validate="User Name is required">
-                            <input autocomplete="off" class="input100" data-val="true" data-val-required="User Name is required !!" name="_UserName" placeholder="User Name" type="text" value="" />
+                    <form action="/Login/ForgotPassword" class="validate-form" id="ForgetForm" method="post"
+                        name="ForgetForm"><input name="__RequestVerificationToken" type="hidden"
+                            value="RtrEOStsx8Cc8DIwZBjrk1FizK6AF9SnT3cQY899zphFoVuczbJNERz6gUkVMovJ0ZHMtt0c4orW53VfgGb-VYXdZecgfTukopC2FD4uYaQ1" />
+                        <div class="wrap-input100 validate-input" data-validate="User Name is required">
+                            <input autocomplete="off" class="input100" data-val="true"
+                                data-val-required="User Name is required !!" name="_UserName" placeholder="User Name"
+                                type="text" value="" />
                             <span class="focus-input100"></span>
                             <span class="symbol-input100">
                                 <i class="fa fa-user" aria-hidden="true"></i>
@@ -220,16 +188,17 @@
                             </a>
                         </div>
                         <input type="hidden" id="RecaptchaTokens" name="RecaptchaTokens" />
-</form>                </div>
+                    </form>
+                </div>
 
                 <div class="login100-pic">
 
                     <div id="owl-demo" class="owl-carousel owl-theme">
-<div class="item">
-                                    <a href="https://amity.edu/" target="_blank">
-                                        <img src='/login-files/QSRanking12.jpg' data-zoom-image='/login-files/QSRanking12.jpg'>
-                                    </a>
-                                </div>
+                        <div class="item">
+                            <a href="https://amity.edu/" target="_blank">
+                                <img src='/login-files/QSRanking12.jpg' data-zoom-image='/login-files/QSRanking12.jpg'>
+                            </a>
+                        </div>
 
 
 

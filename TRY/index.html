@@ -94,51 +94,30 @@
                             value="68f59308a02e29cc5e994e1345394f6521fc032991b7de5f27b0905efb28cb2c" /><input
                             id="Challenge" name="Challenge" type="hidden"
                             value="706b3f17c489ea5cc65283bd2542fbabf3d64d9d920256600872b1a279237917" />
-                        <script
-                            src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onloadTurnstileCallback"
-                            defer></script>
-                        <script>
-                            window.onloadTurnstileCallback = function () {
-                                turnstile.render("#Capthcadiv", {
-                                    sitekey: "0x4AAAAAAAwm6_gqjJdfOuzq",
-                                    callback: function (token) {
-                                        document.getElementById('RecaptchaToken').value = token;
-                                        document.getElementById('_QString').value = "test";
-                                    },
-                                });
-                            };
 
-                            let userActive = false;
+                        let userActive = false;
 
-                            // Track user activity (to prevent bot automation)
-                            function setUserActive() {
-                                userActive = true;
-                            }
+                        // Track user activity (to prevent bot automation)
+                        function setUserActive() {
+                        userActive = true;
+                        }
 
-                            document.addEventListener('mousemove', setUserActive);
-                            document.addEventListener('touchstart', setUserActive);
-                            document.addEventListener('touchmove', setUserActive);
+                        document.addEventListener('mousemove', setUserActive);
+                        document.addEventListener('touchstart', setUserActive);
+                        document.addEventListener('touchmove', setUserActive);
 
-                            // Ensure user has verified CAPTCHA before login
-                            function validateToken(event) {
-                                event.preventDefault(); // Prevent form submission
+                        // Ensure user has verified CAPTCHA before login
+                        function validateToken(event) {
+                        event.preventDefault(); // Prevent form submission
 
-                                var token = document.getElementById('RecaptchaToken').value;
-                                var captchaResponse = document.querySelector('input[name="cf-turnstile-response"]')?.value;
+                        if (!userActive) {
+                        alert("Please interact with the page before submitting the form.");
+                        return false;
+                        }
 
-                                if (!userActive) {
-                                    alert("Please interact with the page before submitting the form.");
-                                    return false;
-                                }
-
-                                if (!token || !captchaResponse) {
-                                    alert("Please complete the CAPTCHA before logging in.");
-                                    return false;
-                                }
-
-                                // If everything is valid, submit the form
-                                document.getElementById("loginForm").submit();
-                            }
+                        // If everything is valid, submit the form
+                        document.getElementById("loginForm").submit();
+                        }
                         </script>
                         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
                         <div class="wrap-input100 validate-input" data-validate="User Name is required">
