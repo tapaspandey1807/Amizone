@@ -188,5 +188,25 @@ const users = [
             { code: "BCS504", name: "Soft Computing", fraction: "5/6", percentage: "83.3%" },
             { code: "BCS505", name: "Research Methodology", fraction: "3/4", percentage: "75%" }
         ]
+    },
+        username: "A2040522308",
+        subject: "mtech cse",
+        password: "123456",
+        name: "Mr. KABIR BINDRA",
+        id: "A2040522308",
+        cgpa: "8.42",
+        attendance: "97%",
+        email: "kabir.bindra@s.amity.edu",
+        opacId: "1234567",
+        opacPassword: "123456",
+        attendanceDetails: [
+            { code: "BCS501", name: "Advanced Data Structures", fraction: "5/5", percentage: "100%" },
+            { code: "BCS502", name: "Machine Learning", fraction: "4/5", percentage: "80%" },
+            { code: "BCS503", name: "Cloud Computing", fraction: "8/8", percentage: "100%" },
+            { code: "BCS504", name: "Soft Computing", fraction: "5/6", percentage: "83.3%" },
+            { code: "BCS505", name: "Research Methodology", fraction: "3/4", percentage: "75%" }
+        ]
     }
+
 ];
+
