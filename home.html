@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amizone | Home</title>
+    <!-- Use the same fonts and icons as the login page -->
+    <link href="Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="brand">
+                <img src="login-files/amizone-logo.png" alt="Amizone" class="logo">
+            </div>
+            <nav class="nav-menu">
+                <a href="#" class="nav-item active"><i class="fa fa-home"></i> Home</a>
+                <a href="#" class="nav-item"><i class="fa fa-calendar"></i> My Calendar</a>
+                <a href="#" class="nav-item"><i class="fa fa-file-text-o"></i> SAP</a>
+                <a href="#" class="nav-item"><i class="fa fa-book"></i> My Courses</a>
+                <a href="#" class="nav-item"><i class="fa fa-pencil-square-o"></i> Registration</a>
+                <a href="#" class="nav-item"><i class="fa fa-table"></i> Time Table</a>
+                <a href="#" class="nav-item"><i class="fa fa-users"></i> My Faculty</a>
+                <a href="#" class="nav-item"><i class="fa fa-pencil"></i> Examination</a>
+                <a href="#" class="nav-item"><i class="fa fa-comments"></i> Feedback</a>
+                <!-- Add more items as seen in screenshot placeholders -->
+            </nav>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Top Header -->
+            <header class="top-header">
+                <div class="header-left">
+                    <div class="mobile-toggle" id="sidebarToggle">
+                        <i class="fa fa-bars"></i>
+                    </div>
+                    <span class="uni-name">Amity University Rajasthan, Jaipur</span>
+                    <div class="breadcrumb">
+                        <i class="fa fa-home"></i> Home <span class="divider">/</span> Dashboard
+                    </div>
+                </div>
+                <div class="header-right">
+                    <div class="icon-btn"><i class="fa fa-bell"></i></div>
+                    <div class="icon-btn"><i class="fa fa-envelope"></i></div>
+                    <div class="user-profile">
+                        <img src="https://via.placeholder.com/32" alt="User" class="avatar">
+                        <div class="user-info">
+                            <span class="user-name">Mr. TARUN GUPTA</span>
+                            <span class="user-id">A20405224097</span>
+                        </div>
+                        <i class="fa fa-caret-down dropdown-toggle"></i>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">My Profile</a>
+                            <a href="#" class="dropdown-item">Change Password</a>
+                            <a href="index.html" class="dropdown-item">Logout</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Dashboard Content -->
+            <div class="dashboard-grid">
+                <!-- Top Stat Cards -->
+                <div class="stat-card green">
+                    <div class="card-content">
+                        <div class="chart-circle">
+                            <span class="percent">97%</span>
+                        </div>
+                        <span class="label">Attendance</span>
+                    </div>
+                </div>
+                <div class="stat-card red">
+                    <div class="card-content centered">
+                        <h3>No Fee Due</h3>
+                    </div>
+                </div>
+                <div class="stat-card blue">
+                    <div class="card-content">
+                        <i class="fa fa-trophy hidden-bg"></i>
+                        <h3>Achievements</h3>
+                        <span class="count">0</span>
+                        <button class="small-btn">Add Achievement</button>
+                    </div>
+                </div>
+                <div class="stat-card orange">
+                    <div class="card-content">
+                        <h3>CGPA : 8.42</h3>
+                        <!-- Simple chart representation -->
+                        <div class="mini-chart">
+                            <div class="bar" style="height: 60%"></div>
+                            <div class="bar" style="height: 80%"></div>
+                            <div class="bar" style="height: 70%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- My Classes -->
+                <div class="content-panel wide-panel">
+                    <div class="panel-header">
+                        <h3>My Classes</h3>
+                        <div class="panel-controls">
+                            <button><i class="fa fa-arrow-left"></i></button>
+                            <button><i class="fa fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="panel-body centered-dates">
+                        <h4>January 24, 2026</h4>
+                        <div class="empty-state">
+                            <!-- Placeholder for timeline or classes -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- My Attendance -->
+                <div class="content-panel wide-panel">
+                    <div class="panel-header">
+                        <h3>My Attendance</h3>
+                    </div>
+                    <div class="panel-body list-view">
+                        <div class="list-item">
+                            <div class="course-code">BCS404</div>
+                            <div class="course-name">Benavioral Science - IV (Relationship Management)</div>
+                            <div class="attendance-stat">
+                                <span class="fraction">2/2</span>
+                                <span class="percentage-badge green">100%</span>
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <div class="course-code">BCS401</div>
+                            <div class="course-name">Communication Skills - II</div>
+                            <div class="attendance-stat">
+                                <span class="fraction">2/2</span>
+                                <span class="percentage-badge green">100%</span>
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <div class="course-code">BCS403</div>
+                            <div class="course-name">Computer Graphics</div>
+                            <div class="attendance-stat">
+                                <span class="fraction">7/8</span>
+                                <span class="percentage-badge green">87.5%</span>
+                            </div>
+                        </div>
+                        <!-- More items... -->
+                    </div>
+                </div>
+
+                <!-- Widgets Row -->
+                <div class="content-panel">
+                    <div class="panel-header">
+                        <h3>Amity Central Library(OPAC)</h3>
+                    </div>
+                    <div class="panel-body">
+                        <p class="small-text">User-Id: <span class="blue">1234567</span> Password: <span
+                                class="blue">1234567</span></p>
+                        <p class="small-text">EBSCO Online: Business source... more than 1,100 peer-reviewed</p>
+                        <button class="action-btn">Library</button>
+                        <button class="read-more-btn">Read more</button>
+                    </div>
+                </div>
+
+                <div class="content-panel">
+                    <div class="panel-header">
+                        <h3>Email</h3>
+                    </div>
+                    <div class="panel-body">
+                        <p class="small-text">Email-Id: <span class="blue">tarun.gupta@s.amity.edu</span></p>
+                        <p class="small-text">Password: <span class="blue">*****</span></p>
+                        <div class="btn-group">
+                            <button class="action-btn orange">Check Emails</button>
+                            <button class="action-btn blue">Office 365</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-panel">
+                    <div class="panel-header">
+                        <h3>IMS</h3>
+                    </div>
+                    <div class="panel-body">
+                        <p class="small-text">Access lesson plans, course materials, internal assessments etc.</p>
+                        <button class="block-btn green">2024-2025/Even</button>
+                        <button class="block-btn green">2024-2025/Odd</button>
+                    </div>
+                </div>
+
+                <div class="content-panel">
+                    <div class="panel-header">
+                        <h3>Virtual</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="btn-group">
+                            <button class="action-btn orange">Virtual Lab</button>
+                            <button class="action-btn green">Research Repository</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Notices Panel -->
+                <div class="content-panel">
+                    <div class="panel-header tab-header">
+                        <div class="tab active">
+                            <i class="fa fa-bell" style="color: purple;"></i> Notices
+                        </div>
+                        <div class="tab-controls">
+                            <span class="badge red">Notices 3</span>
+                            <span class="badge grey">Exam Notices 0</span>
+                        </div>
+                    </div>
+                    <div class="panel-body list-view scrollable">
+                        <div class="list-item notice-item">
+                            <i class="fa fa-bell" style="color: green;"></i>
+                            <div class="notice-content">
+                                <a href="#" class="notice-link">notice - re-evaluation of answer sheets of odd
+                                    ese'2025</a>
+                                <span class="notice-date"><i class="fa fa-clock-o"></i> 16 jan 2026</span>
+                            </div>
+                        </div>
+                        <div class="list-item notice-item">
+                            <i class="fa fa-bell" style="color: green;"></i>
+                            <div class="notice-content">
+                                <a href="#" class="notice-link">fee notice for ph.d. scholars (academic session
+                                    2025-26)</a>
+                                <span class="notice-date"><i class="fa fa-clock-o"></i> 19 dec 2025</span>
+                            </div>
+                        </div>
+                        <div class="list-item notice-item">
+                            <i class="fa fa-bell" style="color: green;"></i>
+                            <div class="notice-content">
+                                <a href="#" class="notice-link">notice : fee notice even semester academic session
+                                    (2025-2026)</a>
+                                <span class="notice-date"><i class="fa fa-clock-o"></i> 21 nov 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Events Panel -->
+                <div class="content-panel">
+                    <div class="panel-header tab-header">
+                        <div class="tab active">
+                            <i class="fa fa-bell" style="color: purple;"></i> Events
+                        </div>
+                        <div class="tab-controls">
+                            <span class="badge red">Happenings 0</span>
+                            <span class="badge grey">Upcoming 1</span>
+                        </div>
+                    </div>
+                    <div class="panel-body centered-dates">
+                        <p style="text-align: center; color: #555;">No Happening exists for you.</p>
+                    </div>
+                </div>
+
+                <!-- Chancellor's Message -->
+                <div class="content-panel wide-panel message-panel">
+                    <div class="panel-header">
+                        <h3>Chancellor's Message</h3>
+                    </div>
+                    <div class="panel-body message-body">
+                        <div class="message-content">
+                            <p>I wish you a productive year ahead, which will have tremendous personal growth for you.
+                            </p>
+                            <p>I am sure you enjoyed the break with family and friends and are all reenergized for
+                                campus.</p>
+                            <p>At Amity our aim and dream is to equip you and each Amitian with the right value system,
+                                caring nature for others and thorough professional knowledge so that you can be the
+                                leaders of our Country and the world who will change all this. </p>
+                            <p>In this day and age, security and safety is very important. As you know, at Amity we have
+                                always been very concerned about this. There will be no University campus in India that
+                                will have turnstile access entry control, cctv cameras, security dogs, patrolling
+                                gypsies and so many security personnel. Some students may feel inconvenienced with such
+                                strict measures but it is being done for your safety and I am happy that thousands of
+                                you cooperate patiently on a daily basis.</p><br>
+
+                            <p>If there are any recommendations you have to further increase your safety, or for that
+                                matter to improve anything in the University, you know that you can always reach me at
+                                my email id president@amity.edu</p><br>
+
+
+                            <p>Take care of yourselves and others around you.</p>
+                            <p>All the best.</p>
+                            <p class="signature">Atul Chauhan <br> Chancellor, Amity University</p>
+                        </div>
+                        <img src="login-files/chancellor.png" alt="Chancellor" class="chancellor-img">
+                    </div>
+                </div>
+
+
+            </div>
+        </main>
+    </div>
+    <script src="home.js"></script>
+</body>
+
+</html>
